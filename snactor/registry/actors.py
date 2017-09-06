@@ -21,9 +21,9 @@ def must_get_actor(actor):
 
 def actor_names_by_tags(tags, names=()):
     if names == ():
-        return [name for name, a  in _REGISTERED_ACTORS.items() if a[0].tags.intersection(tags)]
+        return [name for name, a in _REGISTERED_ACTORS.items() if a[0].tags.intersection(tags)]
     else:
-        return [name for name, a  in _REGISTERED_ACTORS.items() if a[0].tags.intersection(tags) and name in names]
+        return [name for name, a in _REGISTERED_ACTORS.items() if a[0].tags.intersection(tags) and name in names]
 
 
 def register_actor(name, definition, executor):
